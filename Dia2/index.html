@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="FormularioPrincipal">
+        <header>
+            <h1>¡Bienvenido!</h1>
+            <p>Porfavor, rellene el siguente formulario</p>
+        </header>
+        <form method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" autocomplete="off">
+            <span id="nombreError" style="color: rgb(255, 14, 14);"></span>
+
+            <label for="Edad">Edad:</label>
+            <input type="number" id="Edad" name="Edad" autocomplete="off">
+            <span id="EdadError" style="color: rgb(255, 14, 14);"></span>
+
+            <label for="LengPro">Lenguaje de Programación:</label>
+            <input type="text" id="LengPro" name="LengPro" autocomplete="off">
+            <span id="ErrorLeng" style="color: rgb(255, 14, 14);"></span>
+
+            <button type="button" id="Enviado">Enviar</button>
+        </form>
+    </div>
+    <div id="Alerta" class="Alerta">
+        <div class="Alerta-content">
+            <p id="Pregunta"></p>
+            <button class="Alerta-button" id="option1">1</button>
+            <button class="Alerta-button" id="option2">2</button>
+        </div>
+    </div>
+    <script src="js/ValidateForm.js"></script>
+</body>
+
+</html>
